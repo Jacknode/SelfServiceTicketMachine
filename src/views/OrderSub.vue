@@ -94,17 +94,16 @@ export default {
   position: relative;
 }
 .leftWrap {
-  width: 30vw;
+  width: 60vw;
   overflow: hidden;
   float: left;
-  margin-left: 20%;
 }
 .leftWrap > p {
   font-size: 1.5vw;
 }
 .list li {
-  height: 2.5vw;
-  font: 1.5vw / 2.5vw "微软雅黑";
+  height: 4vw;
+  font: 2vw / 4vw "微软雅黑";
 }
 .list li:nth-child(even) {
   background: #9edae0;
@@ -116,22 +115,23 @@ export default {
   margin-right: 2vw;
 }
 .rightWrap {
-  width: 14vw;
+  width: 30vw;
   height: 20vw;
   float: left;
-  margin-left: 6vw;
+  margin-left: 3vw;
 }
 .rightWrap > p {
   width: 100%;
-  height: 3vw;
+  height: 4vw;
   border: 0.1vw solid rgb(180, 180, 180);
   border-radius: 0.5vw;
+  overflow: hidden;
 }
 .rightWrap > p > input {
-  width: 18vw;
-  height: 2.7vw;
+  width: 29vw;
+  height: 3.7vw;
   margin-left: 0.5vw;
-  font-size: 1.2vw;
+  font-size: 2vw;
 }
 .rightWrap dl {
   overflow: hidden;
@@ -139,14 +139,14 @@ export default {
 }
 .rightWrap dl dd {
   float: left;
-  margin: 0 0 0.7vw 1.3vw;
-  width: 3vw;
-  height: 3vw;
+  margin: 0 0 1vw 2.8vw;
+  width: 6vw;
+  height: 5vw;
   background: #005cce;
   color: #fff;
   text-align: center;
   cursor: pointer;
-  font: 1vw / 3vw "微软雅黑";
+  font: 2vw / 5vw "微软雅黑";
   border-radius: 0.5vw;
 }
 .rightWrap dl dd:hover {
@@ -154,12 +154,12 @@ export default {
 }
 .rightWrap > span {
   width: 100%;
-  height: 3vw;
+  height: 5vw;
   background: #fea000;
   display: block;
   color: #fff;
   text-align: center;
-  font: 1.3vw / 3vw "微软雅黑";
+  font: 1.3vw / 5vw "微软雅黑";
   border-radius: 0.3vw;
   cursor: pointer;
 }
@@ -169,9 +169,9 @@ export default {
 .Popup {
   position: absolute;
   width: 30vw;
-  height: 20vw;
+  height: 25vw;
   background: #fff;
-  top: 6vw;
+  top: 5vw;
   left: 35vw;
   padding: 2vw 3vw;
 }
@@ -210,30 +210,30 @@ export default {
 
 .Popup > p {
   width: 100%;
-  height: 3vw;
+  height: 3.5vw;
   border-bottom: 0.1vw solid #eee;
   text-align: center;
-  font: 1.5vw / 3vw "微软雅黑";
+  font: 2vw / 3.5vw "微软雅黑";
 }
 .Popup > span {
   height: 3vw;
   display: block;
-  font: 1vw / 3vw "微软雅黑";
+  font: 1.5vw / 3vw "微软雅黑";
   text-align: center;
 }
 .Popup > span > strong {
   color: red;
-  font-size: 1.5vw;
+  font-size: 2vw;
 }
 .Popup > em {
-  width: 13vw;
-  height: 3vw;
+  width: 14vw;
+  height: 4vw;
   border-radius: 0.5vw;
   display: block;
-  text-indent: 4.5vw;
+  text-indent: 5vw;
   border-radius: 0.5vw;
   color: #fff;
-  font: 1vw / 3vw "微软雅黑";
+  font: 1vw / 4vw "微软雅黑";
   margin: 1vw auto;
 }
 .Popup > em:first-of-type {
