@@ -14,7 +14,7 @@
           <i></i>
           <em>买汽车票</em>
         </a>
-        <a href="javascript:;" class="getTicket">
+        <a href="javascript:;" class="getTicket" @click="qupiao">
           <i></i>
           <em>取汽车票</em>
         </a>
@@ -34,8 +34,11 @@ export default {
   methods: {
     //买汽车票
     buyCarTicket() {
-      this.$router.push({ name: 'GoAddress' });
+      this.$router.push({ name: "GoAddress" });
     },
+    qupiao() {
+      this.$router.push({ name: "Brush" });
+    }
   }
 };
 </script>

@@ -12,12 +12,18 @@
     <div id="noticeWrap">
       <strong>购票须知：</strong>
       <p>小飞象小飞象小飞象小飞象小飞象小飞象小飞象小飞象小飞象小飞象小飞象小飞象小飞象小飞象小飞象小飞象小飞象小飞象小飞象小飞象小飞象小飞象小飞象小飞象小飞象</p>
-      <span>下一步</span>
+      <span @click="next">下一步</span>
     </div>
   </div>
 </template>
 <script>
-
+export default {
+  methods: {
+    next() {
+      this.$router.push({ name: "OrderSub" });
+    }
+  }
+};
 </script>
 <style scoped>
 #wrap {

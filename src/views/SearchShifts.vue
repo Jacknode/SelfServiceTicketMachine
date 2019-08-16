@@ -28,7 +28,7 @@
             <em>余票 37 张</em>
             <em>儿童 0 张</em>
           </span>
-          <span class="payBtn">购买</span>
+          <span class="payBtn" @click="payBtn">购买</span>
         </li>
       </ul>
       <!-- 分页 -->
@@ -51,7 +51,11 @@ export default {
   },
   mounted() {
   },
-  methods: {}
+  methods: {
+    payBtn() {
+      this.$router.push({ name: 'Notice' })
+    }
+  }
 };
 </script>
 
