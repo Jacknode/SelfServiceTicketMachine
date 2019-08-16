@@ -42,185 +42,190 @@
 </template>
 
 <script>
-  export default {
-    name: "SearchShifts",
-    data() {
-      return {};
-    },
-    created() {
-    },
-    mounted() {
-    },
-    methods: {}
-  };
+export default {
+  name: "SearchShifts",
+  data() {
+    return {};
+  },
+  created() {
+  },
+  mounted() {
+  },
+  methods: {}
+};
 </script>
 
 <style scoped>
-  #wrap {
-    width: 100%;
-    height: 100%;
-    background-color: #c1ffff;
-    padding: 1vw;
-    overflow-y: auto;
-    overflow-x: hidden;
-  }
+#wrap {
+  width: 100%;
+  height: 100%;
+  background-color: #c1ffff;
+  padding: 1vw;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
 
-  header {
-    margin-bottom: 1vw;
-  }
+header {
+  margin-bottom: 1vw;
+}
 
-  .dateList {
-    background-color: #1fd2ff;
-    padding: 1vw 2vw;
-    overflow: hidden;
-  }
+.dateList {
+  background-color: #1fd2ff;
+  padding: 1vw 2vw;
+  overflow: hidden;
+}
 
-  .dateList a {
-    float: left;
-    width: 4vw;
-    height: 4vw;
-    background-color: #0064b2;
-    border-radius: 50%;
-    text-align: center;
-    padding-top: 0.75vw;
-  }
+.dateList a {
+  float: left;
+  width: 4vw;
+  height: 4vw;
+  background-color: #0064b2;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 0.75vw;
+}
 
-  .dateList > div {
-    float: left;
-    width: 86vw;
-    padding: 0.5vw 2vw;
-    font: 2vw/3vw "微软雅黑";
-  }
+.dateList .next {
+  float: right;
+}
 
-  .dateList > div span {
-    float: left;
-    color: #fff;
-    margin-right: 0.5vw;
-    padding: 0 3vw;
-    border-radius: 1.5vw;
-    cursor: pointer;
-  }
+.dateList > div {
+  float: left;
+  width: 80vw;
+  padding: 0.5vw 2vw;
+  font: 2vw/3vw "微软雅黑";
+}
 
-  .dateList > div span.active {
-    background-color: #fff;
-    color: #1fd2ff;
-  }
+.dateList > div span {
+  float: left;
+  color: #fff;
+  margin-right: 0.5vw;
+  padding: 0 3vw;
+  border-radius: 1.5vw;
+  cursor: pointer;
+}
 
-  .dateList .last::before {
-    display: inline-block;
-    content: "";
-    width: 1.5vw;
-    height: 2.5vw;
-    background-color: #fff;
-    clip-path: polygon(0 50%, 80% 0, 100% 0, 20% 50%, 100% 100%, 80% 100%);
-    vertical-align: top;
-  }
+.dateList > div span.active {
+  background-color: #fff;
+  color: #1fd2ff;
+}
 
-  .dateList .next::before {
-    display: inline-block;
-    content: "";
-    width: 1.5vw;
-    height: 2.5vw;
-    background-color: #fff;
-    clip-path: polygon(0 0, 20% 0, 100% 50%, 20% 100%, 0 100%, 80% 50%);
-    vertical-align: top;
-  }
+.dateList .last::before {
+  display: inline-block;
+  content: "";
+  width: 1.5vw;
+  height: 2.5vw;
+  background-color: #fff;
+  clip-path: polygon(0 50%, 80% 0, 100% 0, 20% 50%, 100% 100%, 80% 100%);
+  vertical-align: top;
+}
 
-  header > p {
-    font: 2vw/2 "微软雅黑";
-    background-color: #fbfff3;
-    padding: 0 2vw;
-    color: #dc3300;
-  }
+.dateList .next::before {
+  display: inline-block;
+  content: "";
+  width: 1.5vw;
+  height: 2.5vw;
+  background-color: #fff;
+  clip-path: polygon(0 0, 20% 0, 100% 50%, 20% 100%, 0 100%, 80% 50%);
+  vertical-align: top;
+}
 
-  .shiftsList li {
-    padding: 1vw 0;
-    color: #444;
-  }
+header > p {
+  font: 2vw/2 "微软雅黑";
+  background-color: #fbfff3;
+  padding: 0 2vw;
+  color: #dc3300;
+}
 
-  .shiftsList span {
-    display: inline-block;
-    text-align: center;
-    vertical-align: middle;
-  }
+.shiftsList li {
+  padding: 1vw 0;
+  color: #444;
+  text-align: center;
+}
 
-  .time,
-  .reachIcon,
-  .payMoney {
-    width: 9vw;
-  }
+.shiftsList span {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
 
-  .time,
-  .payMoney {
-    font: 2.5vw/3vw "微软雅黑";
-  }
+.time,
+.reachIcon,
+.payMoney {
+  width: 8vw;
+}
 
-  .reachIcon {
-    padding: 0.5vw;
-    font: 1.5vw/2vw "微软雅黑";
-    margin-top: -2vw;
-  }
+.time,
+.payMoney {
+  font: 2.5vw/3vw "微软雅黑";
+}
 
-  .reachIcon em {
-    display: block;
-  }
+.reachIcon {
+  padding: 0.5vw;
+  font: 1.5vw/2vw "微软雅黑";
+  margin-top: -2vw;
+}
 
-  .reachIcon i {
-    display: block;
-    height: 1vw;
-    background-color: #333;
-    clip-path: polygon(0 80%, 80% 80%, 70% 0, 100% 100%, 0 100%);
-    margin-top: -.5vw;
-  }
+.reachIcon em {
+  display: block;
+}
 
-  .startAddress,
-  .endAddress {
-    width: 25vw;
-    font: 2vw/2.5vw "微软雅黑";
-  }
-  .ticketDetails {
-    width: 12vw;
-  }
+.reachIcon i {
+  display: block;
+  height: 1vw;
+  background-color: #333;
+  clip-path: polygon(0 80%, 80% 80%, 70% 0, 100% 100%, 0 100%);
+  margin-top: -0.5vw;
+}
 
-  .ticketDetails em {
-    display: block;
-    text-align: center;
-    font: 1.5vw/2.5vw "微软雅黑";
-  }
+.startAddress,
+.endAddress {
+  width: 24vw;
+  font: 2vw/2.5vw "微软雅黑";
+}
+.ticketDetails {
+  width: 11vw;
+}
 
-  .payBtn {
-    width: 9vw;
-    font: 1.9vw/4vw "微软雅黑";
-    background-color: #ccc;
-    border-radius: 2vw;
-    color: #fff;
-    background-color: #0064b2;
-    cursor: pointer;
-  }
+.ticketDetails em {
+  display: block;
+  text-align: center;
+  font: 1.5vw/2.5vw "微软雅黑";
+}
 
-  .paging {
-    text-align: center;
-    margin-top: 6vw;
-    font: 3vw/2 "微软雅黑";
-  }
+.payBtn {
+  width: 8vw;
+  font: 1.9vw/4vw "微软雅黑";
+  background-color: #ccc;
+  border-radius: 2vw;
+  color: #fff;
+  background-color: #0064b2;
+  cursor: pointer;
+}
 
-  .paging span {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0 2vw;
-    color: #666;
-  }
+.paging {
+  text-align: center;
+  margin-top: 6vw;
+  font: 3vw/2 "微软雅黑";
+}
 
-  .paging a {
-    display: inline-block;
-    vertical-align: middle;
-    padding: 0 3vw;
-    color: #fff;
-    background-color: #0064b2;
-    border-radius: .5vw;
-  }
-  
-  .paging a:active {
-    background-color: #00ccff;
-  }
+.paging span {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 2vw;
+  color: #666;
+}
+
+.paging a {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 3vw;
+  color: #fff;
+  background-color: #0064b2;
+  border-radius: 0.5vw;
+}
+
+.paging a:active {
+  background-color: #00ccff;
+}
 </style>

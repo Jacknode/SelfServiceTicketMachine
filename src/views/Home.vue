@@ -29,12 +29,12 @@ export default {
   data() {
     return {};
   },
-  created() {},
-  mounted() {},
+  created() { },
+  mounted() { },
   methods: {
     //买汽车票
     buyCarTicket() {
-      this.$router.push({name: 'GoAddress'});
+      this.$router.push({ name: 'GoAddress' });
     },
   }
 };
@@ -53,7 +53,7 @@ header {
   width: 100%;
   background-color: #0016dc;
   height: 5vw;
-  padding: .5vw;
+  padding: 0.5vw;
   overflow: hidden;
 }
 
@@ -92,7 +92,7 @@ section {
 
 .bigImage {
   float: left;
-  width: 70vw;
+  width: 70%;
   height: 100%;
   background: url("../assets/img/homeBigBg.png") no-repeat;
   background-size: 100% 100%;
@@ -100,7 +100,7 @@ section {
 
 .ticketOperation {
   float: left;
-  width: 30vw;
+  width: 30%;
   height: 100%;
   background-color: #c1ffff;
   padding: 1.5vw;

@@ -1,7 +1,7 @@
 <template>
   <div id="wrap">
     <!--选择目的地-->
-    <div class="changeAddress" v-if="false">
+    <div class="changeAddress" v-if="!dateShow">
       <strong>到达目的地</strong>
       <!--目的地列表-->
       <ul class="addressList">
@@ -27,7 +27,7 @@
       </div>
     </div>
     <!--查询日期-->
-    <div class="changeDate">
+    <div class="changeDate" v-if="dateShow">
       <div class="weekList">
         <span>日</span>
         <span>一</span>
@@ -64,14 +64,14 @@
         <strong>终点</strong>
         <p>
           南溪
-          <a href="javascript:;">修改</a>
+          <a href="javascript:;" @click="onData" v-show="dateShow">修改</a>
         </p>
       </div>
       <div class="changeTime">
         <strong>时间</strong>
         <p>
           2019-08-14
-          <a href="javascript:;">查询</a>
+          <a href="javascript:;" @click="onData" v-show="!dateShow">查询</a>
         </p>
       </div>
       <div class="searchSubmit">
@@ -133,16 +133,22 @@ export default {
         "N",
         "M"
       ],
-      addressIndex: 0
+      addressIndex: 0,
+      dateShow: false,
     };
   },
-  created() {},
-  mounted() {},
+  created() { },
+  mounted() { },
   methods: {
     //查询班次
     goSearchShifts() {
       this.$router.push({ name: "SearchShifts" });
+    },
+    //切换日期
+    onData() {
+      this.dateShow = !this.dateShow;
     }
+
   }
 };
 </script>
