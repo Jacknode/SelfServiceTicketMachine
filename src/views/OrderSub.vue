@@ -55,7 +55,7 @@
         <dd>0</dd>
         <dd>确认</dd>
       </dl>
-      <span @click="open">提交订单</span>
+      <span @click="submit">提交订单</span>
     </div>
 
     <!-- 弹窗 -->
@@ -75,15 +75,18 @@
 export default {
   data() {
     return {
-      show: false,
-    }
+      show: false
+    };
   },
   methods: {
     open() {
       this.show = true;
     },
+    submit() {
+      this.$store.dispatch("");
+    }
   }
-}
+};
 </script>
 <style scoped>
 #wrap {
